@@ -2,6 +2,7 @@
 
 ## Overview
 This project implements a question-answering application using a pre-trained BERT model. It allows users to input context and questions, and retrieves answers based on the provided context.
+![Project Screenshot](images/screenshot.png)
 
 ## Features
 - User-friendly web interface for inputting context and questions.

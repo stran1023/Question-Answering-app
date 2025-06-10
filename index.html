@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Question Answering</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Question Answering</h1>
+    <form id="qa-form" >
+        <label for="context">Context:</label>
+        <textarea id="context" name="context" rows="4"></textarea>
+        <label for="question">Question:</label>
+        <input type="text" id="question" name="question">
+        
+        <input type="submit" id="submit-button" value="Submit">
+        <label for="answer">Answer:</label>
+        <textarea id="answer" name="answer" rows="4" readonly></textarea>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

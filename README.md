@@ -14,11 +14,11 @@ This project implements a question-answering application using a pre-trained BER
 - **Model**: Hugging Face Transformers (BERT for Question Answering)
 
 ## File Structure
-├── app.py              # Flask backend application
-├── index.html          # Main HTML file for the frontend
-├── script.js           # JavaScript for handling user interactions
-├── styles.css          # CSS for styling the application
-└── trained/            # Directory containing configuration files for the model
+- app.py              # Flask backend application
+- index.html          # Main HTML file for the frontend
+- script.js           # JavaScript for handling user interactions
+- styles.css          # CSS for styling the application
+- trained/            # Directory containing configuration files for the model
 
 ## Installation
 

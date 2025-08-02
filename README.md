@@ -1,54 +1,72 @@
-# Question Answering Application
+<h1 align="center">❓ Ứng Dụng Hỏi Đáp (Question Answering)</h1>
 
-## Overview
-This project implements a question-answering application using a pre-trained BERT model. It allows users to input context and questions, and retrieves answers based on the provided context.
-![Project Screenshot](images/screenshot.png)
+<p align="left">
+  <em>Ứng dụng này cho phép người dùng đặt câu hỏi dựa trên một đoạn văn bản đã cung cấp. Sử dụng mô hình BERT được huấn luyện sẵn từ Hugging Face Transformers, hệ thống sẽ đưa ra câu trả lời chính xác nhất có thể.</em><br>
+</p>
 
-## Features
-- User-friendly web interface for inputting context and questions.
-- Utilizes a BERT-based model for accurate question-answering.
-- Built with Flask for the backend and vanilla HTML/CSS/JavaScript for the frontend.
+![📸 Giao diện ứng dụng](images/screenshot.png)
 
-## Technologies Used
+---
+
+## ⚙️ Tính Năng
+
+- Giao diện web thân thiện, dễ sử dụng.
+- Trả lời câu hỏi chính xác dựa trên ngữ cảnh người dùng nhập vào.
+- Backend sử dụng Flask, frontend thuần HTML/CSS/JS.
+
+---
+
+## 🛠️ Công Nghệ Sử Dụng
+
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: Flask (Python)
-- **Model**: Hugging Face Transformers (BERT for Question Answering)
+- **Mô hình**: BERT từ thư viện Hugging Face Transformers
 
-## File Structure
-- app.py              # Flask backend application
-- index.html          # Main HTML file for the frontend
-- script.js           # JavaScript for handling user interactions
-- styles.css          # CSS for styling the application
-- trained/            # Directory containing configuration files for the model
+---
 
-## Installation
+## 📁 Cấu Trúc Thư Mục
 
-### Prerequisites
-- Python 3.9 or later
+```bash
+📦Question-Answering-app/
+├── app.py             # Flask backend xử lý logic hỏi đáp
+├── index.html         # Giao diện chính
+├── script.js          # Xử lý tương tác người dùng
+├── styles.css         # Giao diện CSS
+├── trained/           # Các tệp cấu hình và model đã lưu
+└── README.md          # File hướng dẫn (bạn đang đọc nó)
+```
+
+---
+
+## 💻 Cài đặt & chạy ứng dụng
+
+### Yêu cầu
+- Python 3.9 trở lên
 - Pip
 
-### Steps to Set Up
+### Các bước thực hiện
 
-1. **Clone the Repository**
+1. **Clone repository**
    ```bash
    git clone https://github.com/stran1023/Question-Answering-app.git
    cd Question-Answering-app
-2. Create a Virtual Environment
+2. Tạo môi trường ảo
    ```bash
    python -m venv venv
-3. Activate the Virtual Environment
+3. Kích hoạt môi trường ảo
    ```bash
    venv\Scripts\activate
-4. Install Required Packages
+4. Cài đặt thư viện cần thiết
    ```bash
    pip install flask flask-cors transformers torch torchvision torchaudio
-5. Run the Flask Application
+5. Chạy ứng dụng
    ```bash
    python app.py
-6. Open the Frontend
-   - Open a web browser and navigate to http://localhost:8000/index.html (if using a local server) or directly open index.html.
+6. Mở giao diện người dùng
+   - Mở trình duyệt và truy cập: http://localhost:8000/index.html (nếu dùng server local)
+   - Hoặc mở file index.html trực tiếp
 
-## Installation
-1. Enter context in the provided textarea.
-2. Input your question in the question field.
-3. Click the "Submit" button to retrieve the answer.
+## 🧪 Cách sử dụng
+1. Nhập đoạn văn (ngữ cảnh) vào ô văn bản.
+2. Nhập câu hỏi của bạn vào trường nhập liệu.
+3. Nhấn nút Gửi để nhận câu trả lời từ hệ thống.
